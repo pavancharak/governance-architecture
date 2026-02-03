@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Ontology - Governance Architecture</title>
+        <title>Schemas - Governance Architecture</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../axioms/" class="nav-link">Axioms</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Ontology</a>
+                                <a href="../ontology/" class="nav-link">Ontology</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../records/" class="nav-link">Records</a>
@@ -56,7 +56,7 @@
                                 <a href="../architecture_v1/" class="nav-link">Architecture</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../schemas_v1/" class="nav-link">Schemas</a>
+                                <a href="./" class="nav-link active" aria-current="page">Schemas</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../examples_v1/" class="nav-link">Examples</a>
@@ -85,12 +85,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../axioms/" class="nav-link">
+                                <a rel="prev" href="../architecture_v1/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../records/" class="nav-link">
+                                <a rel="next" href="../examples_v1/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -112,25 +112,37 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#ontologymd" class="nav-link">ontology.md</a>
+            <li class="nav-item" data-bs-level="1"><a href="#schemas_v1md" class="nav-link">schemas_v1.md</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#1-ontological-scope" class="nav-link">1. Ontological Scope</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#2-fundamental-classes" class="nav-link">2. Fundamental Classes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#decisionevent" class="nav-link">DecisionEvent</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#3-ontology-closure-principle" class="nav-link">3. Ontology Closure Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#executiontrace" class="nav-link">ExecutionTrace</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#4-dual-truth-principle" class="nav-link">4. Dual-Truth Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#escalationrecord" class="nav-link">EscalationRecord</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#5-identity-principle" class="nav-link">5. Identity Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#decisionpoint" class="nav-link">DecisionPoint</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#precondition" class="nav-link">Precondition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#escalationrule" class="nav-link">EscalationRule</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#intentskeleton" class="nav-link">IntentSkeleton</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#changeset" class="nav-link">ChangeSet</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -141,65 +153,82 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="ontologymd">ontology.md</h1>
-<p>Core Ontology of the Governance System</p>
+<h1 id="schemas_v1md">schemas_v1.md</h1>
+<p>Canonical Record Schemas for architecture_v1</p>
 <hr />
-<h2 id="1-ontological-scope">1. Ontological Scope</h2>
-<p>The system defines a closed and explicit ontology of internal entities.</p>
-<p>Only entities defined within this ontology are permitted to exist inside the system.</p>
-<p>No implicit, dynamic, or ad-hoc entity types are allowed.</p>
-<p>All entities are:
-- First-class.
-- Explicitly typed.
-- Immutable once created.
-- Identified by content-derived cryptographic identity.</p>
+<h2 id="decisionevent">DecisionEvent</h2>
+<p>Fields:
+- decision_point_id : Hash
+- intent_context_id : Hash
+- outcome : Enum
+- reason_code : Enum
+- based_on_trace_id : Hash
+- signatures : List<Signature></p>
+<p>Constraints:
+- outcome must be allowed by DecisionPoint
+- no timestamp field
+- no free-text fields</p>
 <hr />
-<h2 id="2-fundamental-classes">2. Fundamental Classes</h2>
-<p>The system’s ontology consists of two fundamental classes:</p>
-<h3 id="21-factual-entities">2.1 Factual Entities</h3>
-<p>Factual entities represent what actually happened.</p>
-<p>They include:</p>
-<ul>
-<li>Decisions made by the system.</li>
-<li>Execution steps taken during a process.</li>
-<li>Escalations and their resolutions.</li>
-<li>Operational events.</li>
-</ul>
-<p>Factual entities are historical truth.<br />
-They are never edited, never deleted, and never reinterpreted.</p>
+<h2 id="executiontrace">ExecutionTrace</h2>
+<p>Fields:
+- intent_context_id : Hash
+- trace_type : Enum
+- subject_id : Hash
+- previous_trace_id : Hash | null
+- resulting_context_id : Hash
+- signatures : List<Signature></p>
+<p>Constraints:
+- no cycles
+- append-only</p>
 <hr />
-<h3 id="22-definitional-entities">2.2 Definitional Entities</h3>
-<p>Definitional entities represent the logic that governs system behavior.</p>
-<p>They include:</p>
-<ul>
-<li>Decision points.</li>
-<li>Preconditions.</li>
-<li>Escalation rules.</li>
-<li>Intent skeletons.</li>
-<li>Record schemas.</li>
-</ul>
-<p>Definitional entities determine how future decisions may be evaluated.</p>
-<p>They do not retroactively affect past factual entities.</p>
+<h2 id="escalationrecord">EscalationRecord</h2>
+<p>Fields:
+- trigger_trace_id : Hash
+- escalation_rule_id : Hash
+- assigned_humans : List<HumanID>
+- resolution_decision_event_id : Hash
+- resolution_trace_id : Hash
+- signatures : List<Signature></p>
 <hr />
-<h2 id="3-ontology-closure-principle">3. Ontology Closure Principle</h2>
-<p>The set of entity types in the system is strictly limited and closed.</p>
-<p>No new fundamental entity types may be introduced dynamically.</p>
-<p>Changes to the ontology itself require the same human-approved change process as any other core logic change.</p>
+<h2 id="decisionpoint">DecisionPoint</h2>
+<p>Fields:
+- name : String
+- description : String
+- outcomes : List<String>
+- signatures : List<Signature></p>
 <hr />
-<h2 id="4-dual-truth-principle">4. Dual-Truth Principle</h2>
-<p>The system treats both:
-- Facts (what happened), and
-- Process traces (how it happened)</p>
-<p>as equally real and first-class.</p>
-<p>Neither is derived from the other.</p>
-<p>Both are stored explicitly, immutably, and independently.</p>
+<h2 id="precondition">Precondition</h2>
+<p>Fields:
+- name : String
+- description : String
+- predicate_expression : BooleanExpression
+- signatures : List<Signature></p>
 <hr />
-<h2 id="5-identity-principle">5. Identity Principle</h2>
-<p>Every entity in the system has a content-derived cryptographic identity.</p>
-<p>The identity is computed as a hash of the canonical serialization of the entity’s contents.</p>
-<p>Any change to content produces a different identity.</p>
-<p>Tampering is detectable at the object level.</p>
-<p>Replay does not require trusting storage.</p></div>
+<h2 id="escalationrule">EscalationRule</h2>
+<p>Fields:
+- name : String
+- description : String
+- trigger_condition : BooleanExpression
+- escalation_target_role : Role
+- signatures : List<Signature></p>
+<hr />
+<h2 id="intentskeleton">IntentSkeleton</h2>
+<p>Fields:
+- name : String
+- description : String
+- stages : List<Stage>
+- transitions : List<Transition>
+- signatures : List<Signature></p>
+<hr />
+<h2 id="changeset">ChangeSet</h2>
+<p>Fields:
+- change_type : Enum(ADD|UPDATE|DEPRECATE)
+- target_record_type : Enum
+- target_record_id : Hash
+- new_definition : Record
+- rationale : String
+- approvals : List<HumanID>
+- signatures : List<Signature></p></div>
             </div>
         </div>
 

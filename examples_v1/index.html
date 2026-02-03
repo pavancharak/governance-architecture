@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Ontology - Governance Architecture</title>
+        <title>Examples - Governance Architecture</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../axioms/" class="nav-link">Axioms</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Ontology</a>
+                                <a href="../ontology/" class="nav-link">Ontology</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../records/" class="nav-link">Records</a>
@@ -59,7 +59,7 @@
                                 <a href="../schemas_v1/" class="nav-link">Schemas</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../examples_v1/" class="nav-link">Examples</a>
+                                <a href="./" class="nav-link active" aria-current="page">Examples</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../governance_principles.md" class="nav-link">Principles</a>
@@ -85,12 +85,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../axioms/" class="nav-link">
+                                <a rel="prev" href="../schemas_v1/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../records/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -112,25 +112,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#ontologymd" class="nav-link">ontology.md</a>
+            <li class="nav-item" data-bs-level="1"><a href="#examples_v1md" class="nav-link">examples_v1.md</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#1-ontological-scope" class="nav-link">1. Ontological Scope</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#2-fundamental-classes" class="nav-link">2. Fundamental Classes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#example-1-simple-deterministic-decision" class="nav-link">Example 1 — Simple Deterministic Decision</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#3-ontology-closure-principle" class="nav-link">3. Ontology Closure Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#example-2-escalation-required" class="nav-link">Example 2 — Escalation Required</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#4-dual-truth-principle" class="nav-link">4. Dual-Truth Principle</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#5-identity-principle" class="nav-link">5. Identity Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#example-3-snapshot-isolation" class="nav-link">Example 3 — Snapshot Isolation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -141,65 +133,93 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="ontologymd">ontology.md</h1>
-<p>Core Ontology of the Governance System</p>
+<p>examples_v1.md</p>
+<h1 id="examples_v1md">examples_v1.md</h1>
+<p>Example Execution Traces for architecture_v1</p>
 <hr />
-<h2 id="1-ontological-scope">1. Ontological Scope</h2>
-<p>The system defines a closed and explicit ontology of internal entities.</p>
-<p>Only entities defined within this ontology are permitted to exist inside the system.</p>
-<p>No implicit, dynamic, or ad-hoc entity types are allowed.</p>
-<p>All entities are:
-- First-class.
-- Explicitly typed.
-- Immutable once created.
-- Identified by content-derived cryptographic identity.</p>
+<h2 id="example-1-simple-deterministic-decision">Example 1 — Simple Deterministic Decision</h2>
+<h3 id="scenario">Scenario</h3>
+<p>A system evaluates whether an action is permitted.</p>
+<h3 id="intentskeleton">IntentSkeleton</h3>
+<p>Name: "PermissionCheck"</p>
+<h3 id="intentcontext">IntentContext</h3>
+<p>Input:
+- actor_id = Human_123
+- action = "ACCESS_RESOURCE"</p>
+<h3 id="execution">Execution</h3>
+<ol>
+<li>
+<p>ExecutionTrace T1:
+   System evaluates Precondition "IsActorAuthenticated" → true</p>
+</li>
+<li>
+<p>ExecutionTrace T2:
+   System evaluates Precondition "HasPermission" → true</p>
+</li>
+<li>
+<p>DecisionEvent D1:
+   decision_point = "PermissionDecision"
+   outcome = "ALLOW"
+   reason_code = "ALL_PRECONDITIONS_TRUE"
+   based_on_trace = T2</p>
+</li>
+</ol>
+<h3 id="result">Result</h3>
+<p>Access is granted. No escalation occurs.</p>
 <hr />
-<h2 id="2-fundamental-classes">2. Fundamental Classes</h2>
-<p>The system’s ontology consists of two fundamental classes:</p>
-<h3 id="21-factual-entities">2.1 Factual Entities</h3>
-<p>Factual entities represent what actually happened.</p>
-<p>They include:</p>
-<ul>
-<li>Decisions made by the system.</li>
-<li>Execution steps taken during a process.</li>
-<li>Escalations and their resolutions.</li>
-<li>Operational events.</li>
-</ul>
-<p>Factual entities are historical truth.<br />
-They are never edited, never deleted, and never reinterpreted.</p>
+<h2 id="example-2-escalation-required">Example 2 — Escalation Required</h2>
+<h3 id="scenario_1">Scenario</h3>
+<p>A system cannot derive deterministic outcome.</p>
+<h3 id="intentskeleton_1">IntentSkeleton</h3>
+<p>Name: "FinancialApproval"</p>
+<h3 id="intentcontext_1">IntentContext</h3>
+<p>Input:
+- amount = 1,000,000
+- requester = Human_456</p>
+<h3 id="execution_1">Execution</h3>
+<ol>
+<li>
+<p>ExecutionTrace T1:
+   System evaluates Precondition "AmountBelowLimit" → false</p>
+</li>
+<li>
+<p>EscalationRecord E1:
+   triggered_by = T1
+   escalation_rule = "HighValueRequiresHuman"
+   assigned_humans = [Human_Admin]</p>
+</li>
+<li>
+<p>Human_Admin approves.</p>
+</li>
+<li>
+<p>ExecutionTrace T2:
+   Human resolution recorded.</p>
+</li>
+<li>
+<p>DecisionEvent D1:
+   decision_point = "ApprovalDecision"
+   outcome = "APPROVED"
+   reason_code = "HUMAN_ESCALATION"
+   based_on_trace = T2</p>
+</li>
+</ol>
+<h3 id="result_1">Result</h3>
+<p>Decision produced via escalation.</p>
 <hr />
-<h3 id="22-definitional-entities">2.2 Definitional Entities</h3>
-<p>Definitional entities represent the logic that governs system behavior.</p>
-<p>They include:</p>
-<ul>
-<li>Decision points.</li>
-<li>Preconditions.</li>
-<li>Escalation rules.</li>
-<li>Intent skeletons.</li>
-<li>Record schemas.</li>
-</ul>
-<p>Definitional entities determine how future decisions may be evaluated.</p>
-<p>They do not retroactively affect past factual entities.</p>
-<hr />
-<h2 id="3-ontology-closure-principle">3. Ontology Closure Principle</h2>
-<p>The set of entity types in the system is strictly limited and closed.</p>
-<p>No new fundamental entity types may be introduced dynamically.</p>
-<p>Changes to the ontology itself require the same human-approved change process as any other core logic change.</p>
-<hr />
-<h2 id="4-dual-truth-principle">4. Dual-Truth Principle</h2>
-<p>The system treats both:
-- Facts (what happened), and
-- Process traces (how it happened)</p>
-<p>as equally real and first-class.</p>
-<p>Neither is derived from the other.</p>
-<p>Both are stored explicitly, immutably, and independently.</p>
-<hr />
-<h2 id="5-identity-principle">5. Identity Principle</h2>
-<p>Every entity in the system has a content-derived cryptographic identity.</p>
-<p>The identity is computed as a hash of the canonical serialization of the entity’s contents.</p>
-<p>Any change to content produces a different identity.</p>
-<p>Tampering is detectable at the object level.</p>
-<p>Replay does not require trusting storage.</p></div>
+<h2 id="example-3-snapshot-isolation">Example 3 — Snapshot Isolation</h2>
+<h3 id="scenario_2">Scenario</h3>
+<p>New input arrives mid-decision.</p>
+<h3 id="execution_2">Execution</h3>
+<ol>
+<li>IntentContext C1 created.</li>
+<li>ExecutionTrace T1 occurs.</li>
+<li>New input arrives.</li>
+</ol>
+<p>System behavior:
+- C1 remains unchanged.
+- New IntentContext C2 is created.</p>
+<p>C1 and C2 are evaluated independently.</p>
+<p>This gives the model concrete operational grounding.</p></div>
             </div>
         </div>
 

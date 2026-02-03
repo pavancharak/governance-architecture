@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Ontology - Governance Architecture</title>
+        <title>ChangeSet Template - Governance Architecture</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../axioms/" class="nav-link">Axioms</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Ontology</a>
+                                <a href="../ontology/" class="nav-link">Ontology</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../records/" class="nav-link">Records</a>
@@ -84,16 +84,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../axioms/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../records/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -112,25 +102,53 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#ontologymd" class="nav-link">ontology.md</a>
+            <li class="nav-item" data-bs-level="1"><a href="#changeset-template" class="nav-link">ChangeSet Template</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#1-ontological-scope" class="nav-link">1. Ontological Scope</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#2-fundamental-classes" class="nav-link">2. Fundamental Classes</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1-changeset-identity" class="nav-link">1. ChangeSet Identity</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#3-ontology-closure-principle" class="nav-link">3. Ontology Closure Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2-target" class="nav-link">2. Target</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#4-dual-truth-principle" class="nav-link">4. Dual-Truth Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3-current-definition" class="nav-link">3. Current Definition</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#5-identity-principle" class="nav-link">5. Identity Principle</a>
+            <li class="nav-item" data-bs-level="2"><a href="#4-proposed-definition" class="nav-link">4. Proposed Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-rationale" class="nav-link">5. Rationale</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-invariants-preserved" class="nav-link">6. Invariants Preserved</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-risks-introduced" class="nav-link">7. Risks Introduced</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-backward-compatibility" class="nav-link">8. Backward Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-impact-analysis" class="nav-link">9. Impact Analysis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#10-approval" class="nav-link">10. Approval</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#11-activation" class="nav-link">11. Activation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12-post-activation-notes" class="nav-link">12. Post-Activation Notes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -141,65 +159,89 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="ontologymd">ontology.md</h1>
-<p>Core Ontology of the Governance System</p>
+<h1 id="changeset-template">ChangeSet Template</h1>
+<p>Formal Governance Amendment</p>
 <hr />
-<h2 id="1-ontological-scope">1. Ontological Scope</h2>
-<p>The system defines a closed and explicit ontology of internal entities.</p>
-<p>Only entities defined within this ontology are permitted to exist inside the system.</p>
-<p>No implicit, dynamic, or ad-hoc entity types are allowed.</p>
-<p>All entities are:
-- First-class.
-- Explicitly typed.
-- Immutable once created.
-- Identified by content-derived cryptographic identity.</p>
+<h2 id="1-changeset-identity">1. ChangeSet Identity</h2>
+<p>ChangeSet ID:<br />
+(Unique identifier, e.g. CS-0001)</p>
+<p>Change Type:<br />
+ADD | UPDATE | DEPRECATE</p>
+<p>Date:<br />
+(YYYY-MM-DD)</p>
+<p>Proposed By:<br />
+(Human identity)</p>
 <hr />
-<h2 id="2-fundamental-classes">2. Fundamental Classes</h2>
-<p>The system’s ontology consists of two fundamental classes:</p>
-<h3 id="21-factual-entities">2.1 Factual Entities</h3>
-<p>Factual entities represent what actually happened.</p>
-<p>They include:</p>
+<h2 id="2-target">2. Target</h2>
+<p>Target Document:<br />
+(e.g. ontology.md)</p>
+<p>Target Section:<br />
+(e.g. Section 2.2 — Definitional Entities)</p>
+<p>Target Record ID (if applicable):<br />
+(Hash or name)</p>
+<hr />
+<h2 id="3-current-definition">3. Current Definition</h2>
+<p>Paste the exact current text that is being changed.</p>
+<p>This section must match the canonical document exactly.</p>
+<hr />
+<h2 id="4-proposed-definition">4. Proposed Definition</h2>
+<p>Paste the full proposed new text.</p>
+<p>Do not describe the change — write the full replacement.</p>
+<hr />
+<h2 id="5-rationale">5. Rationale</h2>
+<p>Explain why this change is needed.</p>
+<p>This must be human reasoning, not AI reasoning.</p>
+<hr />
+<h2 id="6-invariants-preserved">6. Invariants Preserved</h2>
+<p>List which axioms and global invariants remain valid.</p>
+<p>Example:
+- Determinism
+- Human Authority
+- Non-Retroactivity
+- Closed Ontology</p>
+<hr />
+<h2 id="7-risks-introduced">7. Risks Introduced</h2>
+<p>Describe any new risks, ambiguities, or edge cases.</p>
+<p>If none, explicitly state:<br />
+“No new risks identified.”</p>
+<hr />
+<h2 id="8-backward-compatibility">8. Backward Compatibility</h2>
+<p>Does this change affect existing historical records?</p>
+<p>Yes | No</p>
+<p>If Yes, explain why this does not violate non-retroactivity.</p>
+<hr />
+<h2 id="9-impact-analysis">9. Impact Analysis</h2>
+<p>Describe what components are affected:
+- Engine
+- Registry
+- Schemas
+- Processes
+- Humans</p>
+<hr />
+<h2 id="10-approval">10. Approval</h2>
+<p>Human Approvals Required:</p>
 <ul>
-<li>Decisions made by the system.</li>
-<li>Execution steps taken during a process.</li>
-<li>Escalations and their resolutions.</li>
-<li>Operational events.</li>
+<li>
+<p>Name:<br />
+  Signature:<br />
+  Date:  </p>
+</li>
+<li>
+<p>Name:<br />
+  Signature:<br />
+  Date:  </p>
+</li>
 </ul>
-<p>Factual entities are historical truth.<br />
-They are never edited, never deleted, and never reinterpreted.</p>
 <hr />
-<h3 id="22-definitional-entities">2.2 Definitional Entities</h3>
-<p>Definitional entities represent the logic that governs system behavior.</p>
-<p>They include:</p>
-<ul>
-<li>Decision points.</li>
-<li>Preconditions.</li>
-<li>Escalation rules.</li>
-<li>Intent skeletons.</li>
-<li>Record schemas.</li>
-</ul>
-<p>Definitional entities determine how future decisions may be evaluated.</p>
-<p>They do not retroactively affect past factual entities.</p>
+<h2 id="11-activation">11. Activation</h2>
+<p>Effective Version:<br />
+(e.g. architecture_v2)</p>
+<p>Activation Condition:<br />
+(Immediate | Scheduled | Conditional)</p>
 <hr />
-<h2 id="3-ontology-closure-principle">3. Ontology Closure Principle</h2>
-<p>The set of entity types in the system is strictly limited and closed.</p>
-<p>No new fundamental entity types may be introduced dynamically.</p>
-<p>Changes to the ontology itself require the same human-approved change process as any other core logic change.</p>
-<hr />
-<h2 id="4-dual-truth-principle">4. Dual-Truth Principle</h2>
-<p>The system treats both:
-- Facts (what happened), and
-- Process traces (how it happened)</p>
-<p>as equally real and first-class.</p>
-<p>Neither is derived from the other.</p>
-<p>Both are stored explicitly, immutably, and independently.</p>
-<hr />
-<h2 id="5-identity-principle">5. Identity Principle</h2>
-<p>Every entity in the system has a content-derived cryptographic identity.</p>
-<p>The identity is computed as a hash of the canonical serialization of the entity’s contents.</p>
-<p>Any change to content produces a different identity.</p>
-<p>Tampering is detectable at the object level.</p>
-<p>Replay does not require trusting storage.</p></div>
+<h2 id="12-post-activation-notes">12. Post-Activation Notes</h2>
+<p>Optional notes after deployment.</p>
+<p>This section is filled only after activation.</p></div>
             </div>
         </div>
 
