@@ -113,6 +113,118 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="records">Records</h1>
+<h1 id="records_1">Records</h1>
+<h1 id="recordsmd">records.md</h1>
+<p>Canonical Record Types</p>
+<h2 id="1-closed-set-principle">1. Closed Set Principle</h2>
+<p>The system defines a strictly limited and closed set of canonical record types.</p>
+<p>Only these record types are permitted to exist in the registry.</p>
+<p>No new fundamental record types may be introduced dynamically.</p>
+<p>Changes to the set of record types require explicit human approval via ChangeSets.</p>
+<h2 id="2-factual-record-types">2. Factual Record Types</h2>
+<p>These records represent what actually happened.</p>
+<h3 id="21-decisionevent">2.1 DecisionEvent</h3>
+<p>Represents an authoritative decision.</p>
+<p>Fields:
+- decision_point_id : Hash
+- intent_context_id : Hash
+- outcome : Enum
+- reason_code : Enum
+- based_on_trace_id : Hash
+- signatures : List<Signature></p>
+<p>Properties:
+- No free-text fields.
+- No timestamps.
+- No decider identity.
+- Immutable and append-only.</p>
+<h3 id="22-executiontrace">2.2 ExecutionTrace</h3>
+<p>Represents a single step in a decision process.</p>
+<p>Fields:
+- intent_context_id : Hash
+- trace_type : Enum
+- subject_id : Hash
+- previous_trace_id : Hash | null
+- resulting_context_id : Hash
+- signatures : List<Signature></p>
+<p>Properties:
+- Each trace references the previous.
+- No cycles allowed.
+- Entire history is the chain.</p>
+<h3 id="23-escalationrecord">2.3 EscalationRecord</h3>
+<p>Represents a governed human escalation.</p>
+<p>Fields:
+- trigger_trace_id : Hash
+- escalation_rule_id : Hash
+- assigned_humans : List<HumanID>
+- resolution_decision_event_id : Hash
+- resolution_trace_id : Hash
+- signatures : List<Signature></p>
+<p>Properties:
+- Records full escalation lifecycle.
+- First-class authoritative process.</p>
+<h3 id="24-operationalrecord">2.4 OperationalRecord</h3>
+<p>Represents operational system or human events.</p>
+<p>Fields:
+- operation_type : Enum
+- operation_actor : Enum(HUMAN|SYSTEM)
+- actor_identity_id : Hash
+- affected_components : List<String>
+- operation_payload : DeterministicObject
+- signatures : List<Signature></p>
+<h2 id="3-definitional-record-types">3. Definitional Record Types</h2>
+<p>These records define how future behavior works.</p>
+<h3 id="31-decisionpoint">3.1 DecisionPoint</h3>
+<p>Defines a place where a decision occurs.</p>
+<p>Fields:
+- name : String
+- description : String
+- outcomes : List<String>
+- signatures : List<Signature></p>
+<h3 id="32-precondition">3.2 Precondition</h3>
+<p>Defines a boolean predicate.</p>
+<p>Fields:
+- name : String
+- description : String
+- predicate_expression : BooleanExpression
+- signatures : List<Signature></p>
+<p>Properties:
+- Must be deterministic.
+- No side effects.</p>
+<h3 id="33-escalationrule">3.3 EscalationRule</h3>
+<p>Defines when human escalation occurs.</p>
+<p>Fields:
+- name : String
+- description : String
+- trigger_condition : BooleanExpression
+- escalation_target_role : Role
+- signatures : List<Signature></p>
+<h3 id="34-intentskeleton">3.4 IntentSkeleton</h3>
+<p>Defines a behavioral template.</p>
+<p>Fields:
+- name : String
+- description : String
+- stages : List<Stage>
+- transitions : List<Transition>
+- signatures : List<Signature></p>
+<h3 id="35-changeset">3.5 ChangeSet</h3>
+<p>Defines a change to system logic.</p>
+<p>Fields:
+- change_type : Enum(ADD|UPDATE|DEPRECATE)
+- target_record_type : Enum
+- target_record_id : Hash
+- new_definition : Record
+- rationale : String
+- approvals : List<HumanID>
+- signatures : List<Signature></p>
+<h2 id="4-referential-integrity">4. Referential Integrity</h2>
+<p>All canonical records must reference only existing canonical records.</p>
+<p>Records with invalid references are rejected.</p>
+<h2 id="5-validation-consensus">5. Validation &amp; Consensus</h2>
+<p>A canonical record is valid only if:
+- Schema is valid.
+- References are valid.
+- Required signatures are present.
+- All replicas reach unanimous consensus.</p>
               
             </div>
           </div><footer>

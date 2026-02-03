@@ -113,6 +113,51 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="glossary">Glossary</h1>
+<h1 id="glossary_1">Glossary</h1>
+<h1 id="glossary_2">Glossary</h1>
+<p>This glossary defines all canonical terms used in the governance system.
+All terms are precise and non-interchangeable.</p>
+<hr />
+<h2 id="decisionpoint">DecisionPoint</h2>
+<p>A formally defined location in a process where a decision must occur.
+DecisionPoints define the finite set of allowed outcomes.</p>
+<hr />
+<h2 id="decisionevent">DecisionEvent</h2>
+<p>A canonical record representing the authoritative outcome of a DecisionPoint.
+DecisionEvents are immutable and content-hash identified.</p>
+<hr />
+<h2 id="executiontrace">ExecutionTrace</h2>
+<p>An immutable record of a single step or transition in a process.
+ExecutionTraces form a causal chain.</p>
+<hr />
+<h2 id="escalation">Escalation</h2>
+<p>A governed transfer of authority to humans when logic is insufficient.</p>
+<hr />
+<h2 id="escalationrecord">EscalationRecord</h2>
+<p>A record representing the full lifecycle of an escalation,
+including trigger, assigned humans, and resolution.</p>
+<hr />
+<h2 id="changeset">ChangeSet</h2>
+<p>A human-approved modification to system logic.
+All system evolution occurs only through ChangeSets.</p>
+<hr />
+<h2 id="precondition">Precondition</h2>
+<p>A pure boolean predicate over IntentContext.
+Preconditions have no side effects.</p>
+<hr />
+<h2 id="intentskeleton">IntentSkeleton</h2>
+<p>An executable template defining the structure of a class of intents.</p>
+<hr />
+<h2 id="registry">Registry</h2>
+<p>The append-only canonical store of all records.
+The single source of truth.</p>
+<hr />
+<h2 id="determinism">Determinism</h2>
+<p>The property that identical inputs always produce identical outcomes.</p>
+<hr />
+<h2 id="fail-closed">Fail Closed</h2>
+<p>The rule that the system must stop operating if consistency cannot be guaranteed.</p>
+<hr />
               
             </div>
           </div><footer>

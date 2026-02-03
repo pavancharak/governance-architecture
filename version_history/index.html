@@ -113,6 +113,75 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="version-history">Version History</h1>
+<h1 id="schemas">Schemas</h1>
+<h1 id="schemas_v1md">schemas_v1.md</h1>
+<p>Canonical Record Schemas for architecture_v1</p>
+<h2 id="decisionevent">DecisionEvent</h2>
+<p>Fields:
+- decision_point_id : Hash
+- intent_context_id : Hash
+- outcome : Enum
+- reason_code : Enum
+- based_on_trace_id : Hash
+- signatures : List<Signature></p>
+<p>Constraints:
+- outcome must be allowed by DecisionPoint
+- no timestamp field
+- no free-text fields</p>
+<h2 id="executiontrace">ExecutionTrace</h2>
+<p>Fields:
+- intent_context_id : Hash
+- trace_type : Enum
+- subject_id : Hash
+- previous_trace_id : Hash | null
+- resulting_context_id : Hash
+- signatures : List<Signature></p>
+<p>Constraints:
+- no cycles
+- append-only</p>
+<h2 id="escalationrecord">EscalationRecord</h2>
+<p>Fields:
+- trigger_trace_id : Hash
+- escalation_rule_id : Hash
+- assigned_humans : List<HumanID>
+- resolution_decision_event_id : Hash
+- resolution_trace_id : Hash
+- signatures : List<Signature></p>
+<h2 id="decisionpoint">DecisionPoint</h2>
+<p>Fields:
+- name : String
+- description : String
+- outcomes : List<String>
+- signatures : List<Signature></p>
+<h2 id="precondition">Precondition</h2>
+<p>Fields:
+- name : String
+- description : String
+- predicate_expression : BooleanExpression
+- signatures : List<Signature></p>
+<h2 id="escalationrule">EscalationRule</h2>
+<p>Fields:
+- name : String
+- description : String
+- trigger_condition : BooleanExpression
+- escalation_target_role : Role
+- signatures : List<Signature></p>
+<h2 id="intentskeleton">IntentSkeleton</h2>
+<p>Fields:
+- name : String
+- description : String
+- stages : List<Stage>
+- transitions : List<Transition>
+- signatures : List<Signature></p>
+<h2 id="changeset">ChangeSet</h2>
+<p>Fields:
+- change_type : Enum(ADD|UPDATE|DEPRECATE)
+- target_record_type : Enum
+- target_record_id : Hash
+- new_definition : Record
+- rationale : String
+- approvals : List<HumanID>
+- signatures : List<Signature></p>
               
             </div>
           </div><footer>
