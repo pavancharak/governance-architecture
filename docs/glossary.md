@@ -1,6 +1,4 @@
 ﻿# Glossary
-# Glossary
-# Glossary
 
 This glossary defines all canonical terms used in the governance system.
 All terms are precise and non-interchangeable.

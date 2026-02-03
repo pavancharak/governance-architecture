@@ -1,6 +1,5 @@
 ﻿# Examples v1
-# Examples
-# examples_v1.md  
+
 Example Execution Traces for architecture_v1
 
 

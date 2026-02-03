@@ -1,6 +1,5 @@
 ﻿# Escalation
-Escalation
-escalation.md
+
 Human Escalation & Authority Semantics
 
 1. Purpose of Escalation

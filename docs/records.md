@@ -1,6 +1,5 @@
 ﻿# Records
-# Records
-# records.md  
+  
 Canonical Record Types
 
 

@@ -1,5 +1,5 @@
 ﻿# Architecture v1
-# Architecture
+
 Section 1 : Purpose & Scope
 
 1. Purpose

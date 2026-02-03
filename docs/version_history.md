@@ -1,6 +1,5 @@
 ﻿# Version History
-# Schemas
-# schemas_v1.md  
+
 Canonical Record Schemas for architecture_v1
 
 

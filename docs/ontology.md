@@ -1,6 +1,5 @@
 ﻿# Ontology
-Ontology
-ontology.md
+
 Core Ontology of the Governance System
 
 1. Ontological Scope

@@ -1,6 +1,5 @@
 ﻿# Engine
-Engine
-engine.md
+
 Execution & Decision Engine Semantics
 
 1. Engine Role

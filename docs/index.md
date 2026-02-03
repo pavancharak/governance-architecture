@@ -1,5 +1,5 @@
 ﻿# Home
-Home
+
 Governance System  : Canonical Index
 This repository contains the complete canonical specification of the governance system.
 These documents define a regulated, deterministic, human-governed decision platform.

@@ -1,6 +1,5 @@
 ﻿# Axioms
-Axioms
-axioms.md
+
 Foundational Axioms of the Governance System
 
 Axiom 1  : Determinism
