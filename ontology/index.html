@@ -50,22 +50,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Ontology</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-ontological-scope">1. Ontological Scope</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-fundamental-classes">2. Fundamental Classes</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#21-factual-entities">2.1 Factual Entities</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#22-definitional-entities">2.2 Definitional Entities</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#3-ontology-closure-principle">3. Ontology Closure Principle</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#4-dual-truth-principle">4. Dual-Truth Principle</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#5-identity-principle">5. Identity Principle</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -94,15 +78,15 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../governance_principles.md">Principles</a>
+                <li class="toctree-l1"><a class="reference internal" href="../governance_principles/">Principles</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../glossary.md">Glossary</a>
+                <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../version">Version History</a>
+                <li class="toctree-l1"><a class="reference internal" href="../version_history/">Version History</a>
                 </li>
               </ul>
       </div>
@@ -128,61 +112,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="ontologymd">ontology.md</h1>
-<p>Core Ontology of the Governance System</p>
-<hr />
-<h2 id="1-ontological-scope">1. Ontological Scope</h2>
-<p>The system defines a closed and explicit ontology of internal entities.</p>
-<p>Only entities defined within this ontology are permitted to exist inside the system.</p>
-<p>No implicit, dynamic, or ad-hoc entity types are allowed.</p>
-<p>All entities are:
-- First-class.
-- Explicitly typed.
-- Immutable once created.
-- Identified by content-derived cryptographic identity.</p>
-<hr />
-<h2 id="2-fundamental-classes">2. Fundamental Classes</h2>
-<p>The system’s ontology consists of two fundamental classes:</p>
-<h3 id="21-factual-entities">2.1 Factual Entities</h3>
-<p>Factual entities represent what actually happened.</p>
-<p>They include:</p>
-<ul>
-<li>Decisions made by the system.</li>
-<li>Execution steps taken during a process.</li>
-<li>Escalations and their resolutions.</li>
-<li>Operational events.</li>
-</ul>
-<p>Factual entities are historical truth.<br />
-They are never edited, never deleted, and never reinterpreted.</p>
-<h3 id="22-definitional-entities">2.2 Definitional Entities</h3>
-<p>Definitional entities represent the logic that governs system behavior.</p>
-<p>They include:</p>
-<ul>
-<li>Decision points.</li>
-<li>Preconditions.</li>
-<li>Escalation rules.</li>
-<li>Intent skeletons.</li>
-<li>Record schemas.</li>
-</ul>
-<p>Definitional entities determine how future decisions may be evaluated.</p>
-<p>They do not retroactively affect past factual entities.</p>
-<h2 id="3-ontology-closure-principle">3. Ontology Closure Principle</h2>
-<p>The set of entity types in the system is strictly limited and closed.</p>
-<p>No new fundamental entity types may be introduced dynamically.</p>
-<p>Changes to the ontology itself require the same human-approved change process as any other core logic change.</p>
-<h2 id="4-dual-truth-principle">4. Dual-Truth Principle</h2>
-<p>The system treats both:
-- Facts (what happened), and
-- Process traces (how it happened)</p>
-<p>as equally real and first-class.</p>
-<p>Neither is derived from the other.</p>
-<p>Both are stored explicitly, immutably, and independently.</p>
-<h2 id="5-identity-principle">5. Identity Principle</h2>
-<p>Every entity in the system has a content-derived cryptographic identity.</p>
-<p>The identity is computed as a hash of the canonical serialization of the entity’s contents.</p>
-<p>Any change to content produces a different identity.</p>
-<p>Tampering is detectable at the object level.</p>
-<p>Replay does not require trusting storage.</p>
+                <h1 id="ontology">Ontology</h1>
               
             </div>
           </div><footer>

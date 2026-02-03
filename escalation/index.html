@@ -62,20 +62,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Escalation</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-purpose-of-escalation">1. Purpose of Escalation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-escalation-trigger">2. Escalation Trigger</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#3-escalation-rule">3. Escalation Rule</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#4-escalation-process">4. Escalation Process</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#5-human-authority">5. Human Authority</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#6-no-silent-escalation">6. No Silent Escalation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#7-escalation-as-governance">7. Escalation as Governance</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -92,15 +78,15 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../governance_principles.md">Principles</a>
+                <li class="toctree-l1"><a class="reference internal" href="../governance_principles/">Principles</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../glossary.md">Glossary</a>
+                <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../version">Version History</a>
+                <li class="toctree-l1"><a class="reference internal" href="../version_history/">Version History</a>
                 </li>
               </ul>
       </div>
@@ -126,76 +112,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="escalationmd">escalation.md</h1>
-<p>Human Escalation &amp; Authority Semantics</p>
-<hr />
-<h2 id="1-purpose-of-escalation">1. Purpose of Escalation</h2>
-<p>Escalation exists to handle cases where:</p>
-<ul>
-<li>Deterministic logic cannot derive an outcome.</li>
-<li>Human judgment is explicitly required.</li>
-<li>Authority must be exercised outside predefined rules.</li>
-</ul>
-<p>Escalation is not an error state.</p>
-<p>It is a first-class governed decision process.</p>
-<hr />
-<h2 id="2-escalation-trigger">2. Escalation Trigger</h2>
-<p>Escalation occurs when:</p>
-<ul>
-<li>A Precondition cannot be evaluated deterministically, or</li>
-<li>An EscalationRule’s trigger_condition evaluates to true.</li>
-</ul>
-<p>The Decision Engine must never guess or approximate outcomes.</p>
-<p>If logic is insufficient, escalation is mandatory.</p>
-<hr />
-<h2 id="3-escalation-rule">3. Escalation Rule</h2>
-<p>An EscalationRule defines:</p>
-<ul>
-<li>When escalation is triggered.</li>
-<li>Which human role(s) must be involved.</li>
-</ul>
-<p>Escalation rules are deterministic and human-authored.</p>
-<p>They are part of the system’s definitional logic.</p>
-<hr />
-<h2 id="4-escalation-process">4. Escalation Process</h2>
-<p>When escalation is triggered:</p>
-<ol>
-<li>An EscalationRecord is created.</li>
-<li>Assigned humans are notified.</li>
-<li>Humans review the context and execution traces.</li>
-<li>A human resolution is provided.</li>
-<li>A resolution ExecutionTrace is created.</li>
-<li>A DecisionEvent is emitted based on the human outcome.</li>
-</ol>
-<p>The entire escalation lifecycle is recorded immutably.</p>
-<hr />
-<h2 id="5-human-authority">5. Human Authority</h2>
-<p>Human participants in escalation:</p>
-<ul>
-<li>Are verified system identities.</li>
-<li>Must cryptographically sign their actions.</li>
-<li>Are fully auditable and non-repudiable.</li>
-</ul>
-<p>Human resolution is authoritative.</p>
-<p>The system may not override or reinterpret it.</p>
-<hr />
-<h2 id="6-no-silent-escalation">6. No Silent Escalation</h2>
-<p>All escalations must be explicit.</p>
-<p>There is no concept of:
-- Implicit human approval.
-- Default fallback authority.
-- Silent overrides.</p>
-<p>If a human decision occurs, it must be recorded.</p>
-<hr />
-<h2 id="7-escalation-as-governance">7. Escalation as Governance</h2>
-<p>Escalation is not a workaround.</p>
-<p>It is the formal mechanism by which:</p>
-<ul>
-<li>The system remains safe.</li>
-<li>Responsibility remains human.</li>
-<li>Automation remains bounded.</li>
-</ul>
-<p>Escalation is the system’s legal interface with reality.</p>
+                <h1 id="escalation">Escalation</h1>
               
             </div>
           </div><footer>

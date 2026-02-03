@@ -74,55 +74,19 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Examples</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#example-1-simple-deterministic-decision">Example 1 : Simple Deterministic Decision</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#scenario">Scenario</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#intentskeleton">IntentSkeleton</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#intentcontext">IntentContext</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#execution">Execution</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#result">Result</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example-2-escalation-required">Example 2 : Escalation Required</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#scenario_1">Scenario</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#intentskeleton_1">IntentSkeleton</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#intentcontext_1">IntentContext</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#execution_1">Execution</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#result_1">Result</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example-3-snapshot-isolation">Example 3 : Snapshot Isolation</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#scenario_2">Scenario</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#execution_2">Execution</a>
-    </li>
-        </ul>
-    </li>
     </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../governance_principles.md">Principles</a>
+                <li class="toctree-l1"><a class="reference internal" href="../governance_principles/">Principles</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../glossary.md">Glossary</a>
+                <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../version">Version History</a>
+                <li class="toctree-l1"><a class="reference internal" href="../version_history/">Version History</a>
                 </li>
               </ul>
       </div>
@@ -148,98 +112,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>examples_v1.md</p>
-<h1 id="examples_v1md">examples_v1.md</h1>
-<p>Example Execution Traces for architecture_v1</p>
-<hr />
-<h2 id="example-1-simple-deterministic-decision">Example 1 : Simple Deterministic Decision</h2>
-<h3 id="scenario">Scenario</h3>
-<p>A system evaluates whether an action is permitted.</p>
-<h3 id="intentskeleton">IntentSkeleton</h3>
-<p>Name: "PermissionCheck"</p>
-<h3 id="intentcontext">IntentContext</h3>
-<p>Input:
-- actor_id = Human_123
-- action = "ACCESS_RESOURCE"</p>
-<h3 id="execution">Execution</h3>
-<ol>
-<li>
-<p>ExecutionTrace T1:
-   System evaluates Precondition "IsActorAuthenticated" → true</p>
-</li>
-<li>
-<p>ExecutionTrace T2:
-   System evaluates Precondition "HasPermission" → true</p>
-</li>
-<li>
-<p>DecisionEvent D1:
-   decision_point = "PermissionDecision"
-   outcome = "ALLOW"
-   reason_code = "ALL_PRECONDITIONS_TRUE"
-   based_on_trace = T2</p>
-</li>
-</ol>
-<h3 id="result">Result</h3>
-<p>Access is granted. No escalation occurs.</p>
-<hr />
-<h2 id="example-2-escalation-required">Example 2 : Escalation Required</h2>
-<h3 id="scenario_1">Scenario</h3>
-<p>A system cannot derive deterministic outcome.</p>
-<h3 id="intentskeleton_1">IntentSkeleton</h3>
-<p>Name: "FinancialApproval"</p>
-<h3 id="intentcontext_1">IntentContext</h3>
-<p>Input:
-- amount = 1,000,000
-- requester = Human_456</p>
-<h3 id="execution_1">Execution</h3>
-<ol>
-<li>
-<p>ExecutionTrace T1:
-   System evaluates Precondition "AmountBelowLimit" → false</p>
-</li>
-<li>
-<p>EscalationRecord E1:
-   triggered_by = T1
-   escalation_rule = "HighValueRequiresHuman"
-   assigned_humans = [Human_Admin]</p>
-</li>
-<li>
-<p>Human_Admin approves.</p>
-</li>
-<li>
-<p>ExecutionTrace T2:
-   Human resolution recorded.</p>
-</li>
-<li>
-<p>DecisionEvent D1:
-   decision_point = "ApprovalDecision"
-   outcome = "APPROVED"
-   reason_code = "HUMAN_ESCALATION"
-   based_on_trace = T2</p>
-</li>
-</ol>
-<h3 id="result_1">Result</h3>
-<p>Decision produced via escalation.</p>
-<hr />
-<h2 id="example-3-snapshot-isolation">Example 3 : Snapshot Isolation</h2>
-<h3 id="scenario_2">Scenario</h3>
-<p>New input arrives mid-decision.</p>
-<h3 id="execution_2">Execution</h3>
-<ol>
-<li>IntentContext C1 created.</li>
-<li>ExecutionTrace T1 occurs.</li>
-<li>New input arrives.</li>
-</ol>
-<p>System behavior:
-- C1 remains unchanged.
-- New IntentContext C2 is created.</p>
-<p>C1 and C2 are evaluated independently.</p>
-<p>This gives the model concrete operational grounding.</p>
+                <h1 id="examples-v1">Examples v1</h1>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../schemas_v1/" class="btn btn-neutral float-left" title="Schemas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../governance_principles/" class="btn btn-neutral float-right" title="Principles">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -264,6 +143,8 @@
     
       <span><a href="../schemas_v1/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../governance_principles/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
