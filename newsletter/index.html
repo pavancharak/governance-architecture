@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Schemas - Governance Architecture</title>
+    <title>Newsletter - Governance Architecture</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Schemas";
-        var mkdocs_page_input_path = "schemas_v1.md";
+        var mkdocs_page_name = "Newsletter";
+        var mkdocs_page_input_path = "newsletter.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -71,26 +71,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../architecture_v1/">Architecture</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Schemas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#decisionevent">DecisionEvent</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#executiontrace">ExecutionTrace</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#escalationrecord">EscalationRecord</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#decisionpoint">DecisionPoint</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#precondition">Precondition</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#escalationrule">EscalationRule</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#intentskeleton">IntentSkeleton</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#changeset">ChangeSet</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../schemas_v1/">Schemas</a>
                 </li>
               </ul>
               <ul>
@@ -109,8 +91,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../version_history/">Version History</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../newsletter/">Newsletter</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Newsletter</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -131,7 +115,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Schemas</li>
+      <li class="breadcrumb-item active">Newsletter</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -140,80 +124,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="schemas">Schemas</h1>
-<p>Canonical Record Schemas for architecture_v1</p>
-<h2 id="decisionevent">DecisionEvent</h2>
-<p>Fields:
-- decision_point_id : Hash
-- intent_context_id : Hash
-- outcome : Enum
-- reason_code : Enum
-- based_on_trace_id : Hash
-- signatures : List<Signature></p>
-<p>Constraints:
-- outcome must be allowed by DecisionPoint
-- no timestamp field
-- no free-text fields</p>
-<h2 id="executiontrace">ExecutionTrace</h2>
-<p>Fields:
-- intent_context_id : Hash
-- trace_type : Enum
-- subject_id : Hash
-- previous_trace_id : Hash | null
-- resulting_context_id : Hash
-- signatures : List<Signature></p>
-<p>Constraints:
-- no cycles
-- append-only</p>
-<h2 id="escalationrecord">EscalationRecord</h2>
-<p>Fields:
-- trigger_trace_id : Hash
-- escalation_rule_id : Hash
-- assigned_humans : List<HumanID>
-- resolution_decision_event_id : Hash
-- resolution_trace_id : Hash
-- signatures : List<Signature></p>
-<h2 id="decisionpoint">DecisionPoint</h2>
-<p>Fields:
-- name : String
-- description : String
-- outcomes : List<String>
-- signatures : List<Signature></p>
-<h2 id="precondition">Precondition</h2>
-<p>Fields:
-- name : String
-- description : String
-- predicate_expression : BooleanExpression
-- signatures : List<Signature></p>
-<h2 id="escalationrule">EscalationRule</h2>
-<p>Fields:
-- name : String
-- description : String
-- trigger_condition : BooleanExpression
-- escalation_target_role : Role
-- signatures : List<Signature></p>
-<h2 id="intentskeleton">IntentSkeleton</h2>
-<p>Fields:
-- name : String
-- description : String
-- stages : List<Stage>
-- transitions : List<Transition>
-- signatures : List<Signature></p>
-<h2 id="changeset">ChangeSet</h2>
-<p>Fields:
-- change_type : Enum(ADD|UPDATE|DEPRECATE)
-- target_record_type : Enum
-- target_record_id : Hash
-- new_definition : Record
-- rationale : String
-- approvals : List<HumanID>
-- signatures : List<Signature></p>
+                <h2 id="how-to-subscribe">How to Subscribe</h2>
+<p>The official newsletter is hosted on Substack.</p>
+<p>Subscribe here:</p>
+<p>https://deterministicgovernance.substack.com/</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../architecture_v1/" class="btn btn-neutral float-left" title="Architecture"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../examples_v1/" class="btn btn-neutral float-right" title="Examples">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../version_history/" class="btn btn-neutral float-left" title="Version History"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contact/" class="btn btn-neutral float-right" title="Contact">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -236,10 +156,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../architecture_v1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../version_history/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../examples_v1/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../contact/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
