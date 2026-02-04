@@ -4,16 +4,15 @@ theme: readthedocs
 nav:
   - Home: index.md
   - Whitepapers: whitepapers.md
-  - Axioms: axioms.md
-  - Ontology: ontology.md
-  - Records: records.md
-  - Engine: engine.md
-  - Escalation: escalation.md
-  - Architecture: architecture_v1.md
-  - Schemas: schemas_v1.md
-  - Examples: examples_v1.md
+ # - Axioms: axioms.md
+  # - Ontology: ontology.md
+  #  - Records: records.md
+   # - Engine: engine.md
+  #  - Escalation: escalation.md
+  #  - Architecture: architecture_v1.md
+  #  - Schemas: schemas_v1.md
+  #  - Examples: examples_v1.md
   - Principles: governance_principles.md
   - Glossary: glossary.md
-  - Version History: version_history.md
   - Newsletter: newsletter.md
   - Contact: contact.md
