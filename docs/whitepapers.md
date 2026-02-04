@@ -25,6 +25,7 @@ If you are:
 
 
 ## 1. A Constitutional Layer for AI  
+
 **A Global Framework for Governing Digital Authority**
 
 **Who should read this:**  

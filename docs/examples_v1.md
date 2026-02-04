@@ -33,7 +33,6 @@ Input:
 ### Result
 Access is granted. No escalation occurs.
 
----
 
 ## Example 2 :  Escalation Required
 
@@ -73,7 +72,7 @@ Input:
 Decision produced via escalation.
 
 
-## Example 3 — Snapshot Isolation
+## Example 3 : Snapshot Isolation
 
 ### Scenario
 New input arrives mid-decision.

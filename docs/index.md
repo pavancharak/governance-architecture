@@ -1,12 +1,14 @@
 ﻿# Home
 
 Governance System  : Canonical Index
+
 This repository contains the complete canonical specification of the governance system.
 These documents define a regulated, deterministic, human-governed decision platform.
 All system behavior, logic, and evolution must be derivable from these files.
 No other source of truth exists.
 
 Document Map
+
 1. axioms.md
 Foundational, non-negotiable laws of the system.
 These are the mathematical and philosophical invariants.
