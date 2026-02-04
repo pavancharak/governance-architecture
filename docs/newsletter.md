@@ -1,7 +1,6 @@
 ## How to Subscribe
 
-The official newsletter is hosted on Substack.
+The official newsletter is hosted on **Substack**.
 
-Subscribe here:
-
+👉 **Subscribe here:**  
 https://deterministicgovernance.substack.com/
