@@ -24,7 +24,7 @@ If you are:
 - a **citizen / general reader** → read 11, 1, 4  
 
 
-## 1. A Constitutional Layer for AI  
+## 1. A Constitutional layer for AI  
 
 **A Global Framework for Governing Digital Authority**
 
@@ -43,7 +43,7 @@ It argues that:
 [Download PDF](whitepapers/constitutional_layer_ai_v1.pdf)
 
 
-## 2. Decision as a First-Class Object  
+## 2. Decision as a first-class object  
 **A Formal Theory of Governance in Software Systems**
 
 **Who should read this:**  
@@ -61,7 +61,8 @@ It introduces the idea that:
 
 
 ## 3. Designing Deterministic Systems  
-**Why AI Should Never Be Allowed to Decide**
+
+**Why AI Should never be allowed to decide**
 
 **Who should read this:**  
 AI engineers, startup founders, product leaders.
@@ -79,7 +80,8 @@ It makes the case for:
 
 
 ## 4. Governing Automated Decisions  
-**Digital Due Process & Accountable Automation**
+
+**Digital due process & accountable automation**
 
 **Who should read this:**  
 Regulators, compliance teams, legal professionals.
@@ -96,7 +98,8 @@ into technical system requirements.
 
 
 ## 5. Legal Memory for Software  
-**Why Systems Must Remember Their Own Decisions**
+
+**Why systems must remember their own decisions**
 
 **Who should read this:**  
 Security engineers, auditors, institutional architects.
@@ -114,7 +117,7 @@ It argues that:
 
 
 ## 6. Standardizing Digital Authority  
-**Why Decision Governance Must Become a Global Technical Standard**
+**Why decision governance must become a global technical standard**
 
 **Who should read this:**  
 Standards bodies, governments, international organizations.
@@ -132,7 +135,8 @@ It compares governance to:
 
 
 ## 7. Securing Digital Authority  
-**Threat Models for Governance Infrastructure**
+
+**Threat models for governance infrastructure**
 
 **Who should read this:**  
 Cybersecurity professionals, risk officers, security researchers.
@@ -150,7 +154,8 @@ It treats governance as a **security problem**.
 
 
 ## 8. The Decision Backbone  
-**Why Enterprises Need Deterministic Governance Systems**
+
+**Why enterprises need deterministic governance systems**
 
 **Who should read this:**  
 Enterprise leaders, CTOs, compliance heads.
@@ -167,7 +172,8 @@ It proposes governance as:
 
 
 ## 9. The Deterministic Decision Engine  
-**A Formal Runtime Model for Provable Governance Systems**
+
+**A formal runtime model for provable governance systems**
 
 **Who should read this:**  
 System architects, formal verification researchers.
@@ -181,7 +187,8 @@ deterministic governance systems.
 
 
 ## 10. The Next Infrastructure Layer  
-**Why Governance Will Become the Largest Market in the Age of AI**
+
+**Why governance will become the largest market in the age of AI**
 
 **Who should read this:**  
 Investors, strategists, founders.
@@ -196,7 +203,8 @@ It treats governance as economic infrastructure.
 
 
 ## 11. Who Decides for Society?  
-**Democratic Governance in the Age of AI**
+
+**Democratic governance in the age of AI**
 
 **Who should read this:**  
 Citizens, educators, philosophers, journalists.
