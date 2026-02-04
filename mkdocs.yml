@@ -3,6 +3,7 @@ theme: readthedocs
 
 nav:
   - Home: index.md
+  - Whitepapers: whitepapers.md
   - Axioms: axioms.md
   - Ontology: ontology.md
   - Records: records.md
