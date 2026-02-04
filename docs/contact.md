@@ -1,6 +1,6 @@
 # Contact the Builder
 
-This project is not a product.
+This project is not a product.  
 It is a long-term institutional research and governance initiative.
 
 The builder is the original architect of the system and acts as:
@@ -51,10 +51,10 @@ Valid reasons to contact include:
 ### Professional profiles
 
 **LinkedIn:**  
-https://www.linkedin.com/in/pavancharak/
+[https://www.linkedin.com/in/pavancharak/](https://www.linkedin.com/in/pavancharak/)
 
 **Project Website:**  
-https://www.deterministicgovernance.org/
+[https://www.deterministicgovernance.org/](https://www.deterministicgovernance.org/)
 
 
 ## Communication principles
