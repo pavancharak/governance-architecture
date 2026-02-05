@@ -60,7 +60,7 @@ It is a **power-bearing layer**.
 
 ## Separation of responsibilities
 
-### AI Layer — *Intelligence*
+### AI Layer : *Intelligence*
 
 The AI layer is responsible for:
 
@@ -75,7 +75,7 @@ It may be probabilistic, adaptive, and non-deterministic.
 > **It never holds authority.**
 
 
-### Decision Layer — *Authority*
+### Decision Layer : *Authority*
 
 The Decision Layer is responsible for:
 
@@ -91,7 +91,7 @@ It **must be deterministic**:
 * Ambiguity → escalation or block
 
 
-### Execution Layer — *Action*
+### Execution Layer : *Action*
 
 The execution layer:
 
