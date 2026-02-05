@@ -1,77 +1,49 @@
-# Contact the Builder
+# Contact
 
-This project is not a product.  
-It is a long-term institutional research and governance initiative.
+This is a **commercial governance infrastructure product** designed for deployment in regulated and high‑consequence environments.
 
-The builder is the original architect of the system and acts as:
-
-- system founder  
-- constitutional author  
-- research lead  
-
-Contact is intended for **serious, aligned use cases only**.
+We work with organizations that are concerned with **safety, accountability, and decision authority** in AI‑powered systems.
 
 
-## Who should contact
+## Who should contact us
 
-You should reach out if you are:
+Contact us if you are responsible for **regulatory compliance, risk, safety, or decision governance** within your organization. This may be a dedicated function or a single team embedded within a larger enterprise.
 
-- building governance, compliance, or decision systems  
-- working in AI safety, policy, or regulation  
-- leading enterprise risk or security  
-- an investor exploring governance infrastructure  
-- a researcher interested in deterministic systems  
+Typical roles and teams include:
 
-This is not for:
+* compliance, regulatory affairs, or risk management
+* AI governance, model risk, or responsible AI teams
+* security, safety, or internal audit functions
+* legal, policy, or enterprise architecture groups
+* founders or technical leaders accountable for regulated deployments
 
-- sales pitches  
-- recruitment spam  
-- generic networking  
+You do not need to represent the entire organization. Engagement often starts with **one department or accountable owner** tasked with making AI systems defensible.
 
 
-## Why contact
+## How we are different
 
-Valid reasons to contact include:
+We do not offer:
 
-- discussing real-world deployment  
-- collaborating on governance frameworks  
-- contributing research or standards work  
-- institutional partnerships  
-- legal or policy applications  
+* model evaluations or benchmarking
+* ethics checklists or policy documents
+* post-hoc explanations of opaque systems
+
+We build **decision authority infrastructure**.
+
+Our work focuses on:
+
+* separating AI intelligence from decision authority
+* enforcing deterministic, auditable decision logic
+* making authority explicit, attributable, and contestable
+* ensuring AI can be deployed in regulated environments without becoming a source of uncontrolled power
+
+If your concern is not model performance, but **who is allowed to decide, why, and under what authority**, then this is the right place to engage.
 
 
 ## How to contact
 
-### Primary channel (recommended)
-
-**Email:**  
-[pavan@deterministicgovernance.org](mailto:pavan@deterministicgovernance.org)
-
-
-### Professional profiles
-
-**LinkedIn:**  
-[https://www.linkedin.com/in/pavancharak/](https://www.linkedin.com/in/pavancharak/)
-
-**Project Website:**  
-[https://www.deterministicgovernance.org/](https://www.deterministicgovernance.org/)
+* [**Email**](mailto:pavan@deterministicgovernance.org)
+* [**LinkedIn**](https://www.linkedin.com/in/pavancharak/)
+* [**Website**](https://www.deterministicgovernance.org/)
 
 
-## Communication principles
-
-All communication should follow the same principles as the system:
-
-- explicit  
-- reasoned  
-- accountable  
-- purpose-driven  
-
-Unstructured or vague outreach will be ignored.
-
-
-## Note
-
-This project is intentionally slow, deliberate, and non-commercial by default.
-
-The goal is not growth.  
-The goal is **correct governance**.
