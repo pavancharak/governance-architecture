@@ -28,17 +28,3 @@ If AI shapes outcomes, governance must shape AI.
 * [**Collaborate with us**](contact/)
 
 
-## Collaborate with us
-
-We are actively building a **Decision Layer for AI-powered, regulated-industry products**, and we invite collaboration.
-
-It does not matter whether you are:
-
-* an academic or researcher,
-* a startup or enterprise,
-* a company of national or global repute,
-* or part of government, compliance, or regulatory bodies.
-
-If you are working at the intersection of AI, authority, and real-world impact, we want to collaborate.
-
-Our goal is to ensure you can **innovate without limits**, while retaining **explicit decision authority, accountability, and trust**.
