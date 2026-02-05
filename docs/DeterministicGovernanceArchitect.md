@@ -20,7 +20,9 @@ Its purpose is to make hidden assumptions visible, force explicitness, and block
 
 You can interact directly with the **Deterministic Governance Architect** here:
 
-👉 **[Open the Deterministic Governance Architect on ChatGPT](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**
+**[Open the Deterministic Governance Architect on ChatGPT](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**
+
+ **[Open the Deterministic Governance Architect on ChatGPT](GPTtutoria/Deterministic%20Governance%20Reviewer%20Gpt.pdf)**
 
 Bring a concrete system, policy, or decision flow.  
 Expect blocking, clarification requests, and rigorous governance review **by design**.
