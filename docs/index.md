@@ -25,6 +25,6 @@ If AI shapes outcomes, governance must shape AI.
 
 * [**Whitepapers**](whitepapers/)
 * [**Newsletter**](newsletter/)
-* [**Collaborate with us**](contact/)
+* [**Contact**](contact/)
 
 
