@@ -16,7 +16,7 @@ Our architecture ensures that:
 * Ambiguity results in escalation, never silent action
 * No real-world effect occurs without proof-before-action
 
-This site documents a unified framework for building systems where power is exercised deliberately, traceably, and contestably — even as AI capability scales.
+This site documents a unified framework for building systems where power is exercised deliberately, traceably, and contestably even as AI capability scales.
 
 If AI shapes outcomes, governance must shape AI.
 
