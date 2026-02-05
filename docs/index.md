@@ -22,7 +22,7 @@ In any system where real-world effects matter, authority must be:
 The Decision Layer exists to enforce this separation.
 
 
-## The Problem this layer solves
+## The problem this layer solves
 
 Most AI-powered products collapse three distinct functions into one:
 
