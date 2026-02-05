@@ -24,12 +24,6 @@ You do not need to represent the entire organization. Engagement often starts wi
 
 ## How we are different
 
-We do not offer:
-
-* model evaluations or benchmarking
-* ethics checklists or policy documents
-* post-hoc explanations of opaque systems
-
 We build **decision authority infrastructure**.
 
 Our work focuses on:
