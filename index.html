@@ -42,6 +42,34 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#determinism-for-authority-ai-for-intelligence">Determinism for Authority, AI for Intelligence</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#core-premise">Core premise</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-problem-this-layer-solves">The problem this layer solves</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-the-decision-layer-is">What the Decision Layer is</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#separation-of-responsibilities">Separation of responsibilities</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ai-layer-intelligence">AI Layer (Intelligence)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#decision-layer-authority">Decision Layer (Authority)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#execution-layer-action">Execution Layer (Action)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-ai-and-determinism-reinforce-each-other">How AI and determinism reinforce each other</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-a-decision-looks-like">What a decision looks like</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-determinism-is-non-negotiable">Why determinism is non-negotiable</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-success-looks-like">What success looks like</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#in-one-sentence">In one sentence</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -84,75 +112,116 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="home">Home</h1>
-<p>Governance System  : Canonical Index</p>
-<p>This repository contains the complete canonical specification of the governance system.
-These documents define a regulated, deterministic, human-governed decision platform.
-All system behavior, logic, and evolution must be derivable from these files.
-No other source of truth exists.</p>
-<p>Document Map</p>
+                <h1 id="decision-layer-vision-for-ai-powered-products">Decision Layer Vision for AI-Powered Products</h1>
+<h2 id="determinism-for-authority-ai-for-intelligence">Determinism for Authority, AI for Intelligence</h2>
+<p>AI-powered products increasingly influence decisions with legal, financial, safety, and societal consequences. While AI excels at perception, prediction, and pattern recognition, it is fundamentally probabilistic. Authority, however, cannot be probabilistic.</p>
+<p>This vision proposes a <strong>Decision Layer</strong> that sits beneath AI-powered products, ensuring that <strong>decisions remain deterministic and governable</strong>, while fully preserving the <strong>power of AI</strong> as an intelligence engine.</p>
+<h2 id="core-premise">Core premise</h2>
+<p><strong>AI should inform decisions, not be the decision.</strong></p>
+<p>In any system where real-world effects matter, authority must be:
+- explicit,
+- attributable,
+- auditable,
+- and contestable.</p>
+<p>The Decision Layer exists to enforce this separation.</p>
+<h2 id="the-problem-this-layer-solves">The problem this layer solves</h2>
+<p>Most AI-powered products collapse three distinct functions into one:</p>
 <ol>
-<li>
-<p>Foundational, non-negotiable laws of the system.
-These are the mathematical and philosophical invariants.
-Nothing in any other document may contradict them.</p>
-</li>
-<li>
-<p>Defines what kinds of entities exist in the system.
-This is the closed ontology of reality.
-If something is not defined here, it does not exist.</p>
-</li>
-<li>
-<p>Defines the canonical record types.
-This is the formal grammar of truth.
-It specifies exactly what may be written to the registry.</p>
-</li>
-<li>
-<p>Defines execution semantics.
-This describes how the system runs, evaluates logic, and produces decisions.</p>
-</li>
-<li>
-<p>Defines human-in-the-loop governance.
-This describes how human authority enters the system and how it is recorded.</p>
-</li>
-<li>
-<p>The full system constitution.
-This integrates all principles into a single coherent formal model.</p>
-</li>
-<li>
-<p>Concrete example executions.
-This shows how the abstract system behaves in practice.</p>
-</li>
-<li>
-<p>Formal schemas for canonical records.
-This defines the precise structure and constraints of all records.</p>
-</li>
+<li>Understanding (AI inference)</li>
+<li>Judgment (decision-making)</li>
+<li>Action (execution)</li>
 </ol>
-<!--
-Authority Model
-
-These documents are authoritative.
-All system implementations, code, APIs, user interfaces, and tools must conform to them.
-No behavior is permitted unless it is explicitly justified by these specifications.
-
-Change Policy
-
-These documents are immutable.
-Any change must be proposed via a formal ChangeSet and approved by humans.
-No document may be modified directly without explicit governance.
--->
-<p>Intended Usage</p>
-<p>This specification is intended to be used by:
-System designers.
-Auditors and reviewers.
-Human decision-makers.
-AI systems acting as compilers, simulators, or analysts.
-AI systems must treat these documents as the only source of truth.
-If something is not defined here, it must be treated as undefined.</p>
-<p>Final Principle</p>
-<p>The system is governed by humans.
-The system enforces truth.
-AI assists, but never decides.</p>
+<p>This collapse creates a governance failure:
+- model outputs become de facto decisions,
+- authority is exercised implicitly,
+- justification is reconstructed after outcomes,
+- accountability becomes unclear or contested.</p>
+<p>The Decision Layer exists to <strong>separate intelligence from authority</strong>.</p>
+<h2 id="what-the-decision-layer-is">What the Decision Layer is</h2>
+<p>The Decision Layer is a <strong>deterministic governance substrate</strong> that:</p>
+<ul>
+<li>receives advisory inputs from AI systems,</li>
+<li>evaluates them against explicit intent and authority,</li>
+<li>determines whether action may proceed, must escalate, or must block,</li>
+<li>records the decision as a first-class, replayable object.</li>
+</ul>
+<p>It is:
+- not an AI system,
+- not a workflow engine,
+- not an ethics layer.</p>
+<p>It is a <strong>power-bearing layer</strong>.</p>
+<h2 id="separation-of-responsibilities">Separation of responsibilities</h2>
+<h3 id="ai-layer-intelligence">AI Layer (Intelligence)</h3>
+<p>The AI layer is responsible for:
+- perception and pattern recognition,
+- prediction and classification,
+- scenario generation,
+- uncertainty estimation,
+- explanation of signals.</p>
+<p>It may be probabilistic, adaptive, and non-deterministic.</p>
+<p>It <strong>never holds authority</strong>.</p>
+<h3 id="decision-layer-authority">Decision Layer (Authority)</h3>
+<p>The Decision Layer is responsible for:
+- validating explicit intent,
+- confirming authority boundaries,
+- enforcing proof-before-action,
+- resolving outcomes deterministically or escalating,
+- recording decisions for audit and replay.</p>
+<p>It <strong>must be deterministic</strong>.</p>
+<ul>
+<li>Identical inputs → identical outcomes  </li>
+<li>Ambiguity → escalation or block  </li>
+</ul>
+<h3 id="execution-layer-action">Execution Layer (Action)</h3>
+<p>The execution layer:
+- performs actions already authorized,
+- has no discretion,
+- cannot reinterpret intent or authority.</p>
+<h2 id="how-ai-and-determinism-reinforce-each-other">How AI and determinism reinforce each other</h2>
+<p>This architecture does not weaken AI.</p>
+<p>It protects AI by preventing it from being blamed for authority it never held.</p>
+<p>AI contributes:
+- richer signals,
+- broader context,
+- probabilistic foresight.</p>
+<p>The Decision Layer ensures:
+- those signals are used within explicit boundaries,
+- uncertainty triggers escalation,
+- responsibility remains human-legible.</p>
+<p><strong>AI becomes more powerful because it becomes governable.</strong></p>
+<h2 id="what-a-decision-looks-like">What a decision looks like</h2>
+<p>Instead of:</p>
+<blockquote>
+<p>“The model predicted X, so we did Y.”</p>
+</blockquote>
+<p>A governed decision becomes:</p>
+<blockquote>
+<p>“Given declared intent A, under authority B, with preconditions C satisfied, and AI inputs D provided as advisory evidence, the system deterministically selected outcome E.”</p>
+</blockquote>
+<p>This shift is the essence of the Decision Layer.</p>
+<h2 id="why-determinism-is-non-negotiable">Why determinism is non-negotiable</h2>
+<p>Determinism is required because:
+- authority must be attributable,
+- governance must be auditable,
+- disputes must be resolvable,
+- regulation must be enforceable,
+- power must be contestable.</p>
+<p>Probabilistic authority is indistinguishable from arbitrary power.</p>
+<h2 id="what-success-looks-like">What success looks like</h2>
+<p>When this vision is realized:</p>
+<ul>
+<li>AI systems remain adaptive and intelligent,</li>
+<li>decisions remain explicit and bounded,</li>
+<li>regulators inspect decision logic without inspecting models,</li>
+<li>enterprises scale AI without scaling invisible risk,</li>
+<li>humans remain the ultimate holders of authority.</li>
+</ul>
+<p>Most importantly:</p>
+<blockquote>
+<p><strong>No real-world effect occurs unless it passes through an explicit, deterministic decision gate.</strong></p>
+</blockquote>
+<h2 id="in-one-sentence">In one sentence</h2>
+<p><strong>The Decision Layer ensures that as AI grows more intelligent, the exercise of power becomes more explicit—not less.</strong></p>
               
             </div>
           </div><footer>
@@ -201,5 +270,5 @@ AI assists, but never decides.</p>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-02-05 10:22:03.313762+00:00
+Build Date UTC : 2026-02-05 10:38:13.960978+00:00
 -->
