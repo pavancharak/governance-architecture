@@ -2,5 +2,5 @@
 
 The official newsletter is hosted on **Substack**.
 
-👉 **Subscribe here:**  
-https://deterministicgovernance.substack.com/
+
+**[Subscribe here](https://deterministicgovernance.substack.com)**
