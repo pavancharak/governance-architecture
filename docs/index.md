@@ -1,6 +1,6 @@
-﻿# Decision Layer Vision for AI-Powered Products
+﻿# Decision layer vision for AI-powered products
 
-## Determinism for Authority, AI for Intelligence
+## Determinism for authority, AI for intelligence
 
 AI-powered products increasingly influence decisions with legal, financial, safety, and societal consequences. While AI excels at perception, prediction, and pattern recognition, it is fundamentally probabilistic. **Authority, however, cannot be probabilistic.**
 
@@ -22,7 +22,7 @@ In any system where real-world effects matter, authority must be:
 The Decision Layer exists to enforce this separation.
 
 
-## The Problem This Layer Solves
+## The Problem this layer solves
 
 Most AI-powered products collapse three distinct functions into one:
 
@@ -40,7 +40,7 @@ This collapse creates a governance failure:
 The Decision Layer exists to **separate intelligence from authority**.
 
 
-## What the Decision Layer Is
+## What the Decision Layer is
 
 The Decision Layer is a **deterministic governance substrate** that:
 
@@ -58,7 +58,7 @@ It is:
 It is a **power-bearing layer**.
 
 
-## Separation of Responsibilities
+## Separation of responsibilities
 
 ### AI Layer — *Intelligence*
 
@@ -100,7 +100,7 @@ The execution layer:
 * Cannot reinterpret intent or authority
 
 
-## How AI and Determinism Reinforce Each Other
+## How AI and determinism reinforce each other
 
 This architecture does not weaken AI.
 
@@ -122,7 +122,7 @@ The Decision Layer ensures:
 
 
 
-## What a Decision Looks Like
+## What a Decision looks ilke
 
 Instead of:
 
@@ -135,7 +135,7 @@ A governed decision becomes:
 This shift is the essence of the Decision Layer.
 
 
-## Why Determinism Is Non-Negotiable
+## Why determinism is non-negotiable
 
 Determinism is required because:
 
@@ -148,7 +148,7 @@ Determinism is required because:
 > **Probabilistic authority is indistinguishable from arbitrary power.**
 
 
-## What Success Looks Like
+## What success looks like
 
 When this vision is realized:
 
