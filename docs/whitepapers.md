@@ -1,37 +1,31 @@
-<!-- File: docs/whitepapers.md -->
+# Whitepapers
 
-# Whitepaper
+This page hosts the official research publications of the **Deterministic Governance Systems** project.
 
-This page hosts the official research publication of the
-**Deterministic Governance Systems** project.
-
-This whitepaper is **not marketing material**. It is a formal position paper that establishes:
-
-* how digital authority must be constructed,
-* how automated and AI-mediated systems must be governed, and
-* why consequential decisions must never occur without explicit accountability.
-
-The document presents **one unified theory of deterministic digital governance**, spanning law, technology, institutions, security, and society in the age of AI.
+These papers are **not marketing material**. They are formal position papers that establish how digital authority must be constructed and governed in AI-mediated systems.
 
 
-## Intended audience
+## Designing Deterministic Governance for the AI Era
 
-This whitepaper is written for readers who design, regulate, deploy, oversee, or are affected by decision-making systems, including governments, regulators, research institutions, enterprises, investors, and citizens seeking clarity on how authority operates in AI-mediated environments.
+A foundational whitepaper establishing why **explicit intent, explicit authority, and proof-before-action** are mandatory for any system that exercises real-world power.
 
-The paper is intended to be read as a whole. No role-based guidance, selective interpretation, or audience-specific framing is prescribed.
+It presents a unified theory of deterministic digital governance spanning law, technology, institutions, security, and society in the age of AI.
+
+**[Download PDF](whitepapers/Designing%20Deterministic%20Governance%20for%20the%20AI%20Era.pdf)**
+
+
+## The Decision Layer
+
+A focused architectural paper defining the **Decision Layer** as a deterministic governance substrate that separates intelligence from authority in AI-powered systems.
+
+It explains how decisions become explicit, attributable, replayable, and contestable without constraining AI capability.
+
+**[Download PDF](whitepapers/The%20Decision%20Layer.pdf)**
 
 ---
 
-## Why this whitepaper matters
+## Reading guidance
 
-As AI systems increasingly shape legal, economic, and societal outcomes, governance failures arise not primarily from intent or model accuracy, but from **structural ambiguity** where intent is inferred, authority is assumed, and explanations are constructed only after action.
+These papers are intended to be read as complete arguments. No role-based summaries, selective interpretation, or audience-specific framing is prescribed.
 
-This whitepaper argues that such failures are predictable and preventable. It advances the position that **governability must be a design requirement**, not a retrospective compliance exercise.
-
-## Download
-
-**Designing Deterministic Governance for the AI Era**
-
-*Explicit Intent, Authority, and Proof-Before-Action as Preconditions for Legitimate Decision Systems*
-
-**[Download the Whitepaper (PDF)](whitepapers/Designing%20Deterministic%20Governance%20for%20the%20AI%20Era.pdf)**
+They are written for designers, regulators, operators, researchers, and citizens seeking clarity on how authority must function in systems shaped by AI.
