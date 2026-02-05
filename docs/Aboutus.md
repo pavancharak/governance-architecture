@@ -1,6 +1,6 @@
 ## About Us
 
-### Why We Exist
+### Why we exist
 
 AI systems are increasingly involved in decisions with real legal, financial, and safety consequences, yet the authority behind those decisions is often implicit, opaque, or reconstructed after the fact.
 
