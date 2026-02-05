@@ -23,9 +23,9 @@ If AI shapes outcomes, governance must shape AI.
 
 ## Start here
 
-* [**Whitepapers**](https://docs.deterministicgovernance.org/whitepapers/)
-* [**Newsletter**](https://docs.deterministicgovernance.org/newsletter/)
-* [**Collaborate with us**](https://docs.deterministicgovernance.org/contact/)
+* [**Whitepapers**](whitepapers/)
+* [**Newsletter**](newsletter/)
+* [**Collaborate with us**](contact/)
 
 
 ## Collaborate with us
