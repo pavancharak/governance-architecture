@@ -36,6 +36,7 @@ This shows how the abstract system behaves in practice.
 8. Formal schemas for canonical records.
 This defines the precise structure and constraints of all records.
 
+<!--
 Authority Model
 
 These documents are authoritative.
@@ -47,7 +48,7 @@ Change Policy
 These documents are immutable.
 Any change must be proposed via a formal ChangeSet and approved by humans.
 No document may be modified directly without explicit governance.
-
+-->
 Intended Usage
 
 This specification is intended to be used by:
