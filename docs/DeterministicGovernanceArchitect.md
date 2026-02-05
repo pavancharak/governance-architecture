@@ -1,6 +1,8 @@
 > **Want to learn, experiment, or contribute?**  
 > Start by using the custom GPT:  
-> 👉 **[Deterministic Governance Architect](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**
+> 👉 **[Deterministic Governance Architect](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**  
+>  
+> 📄 **[Download the tutorial PDF](assets/tutorials/deterministic-governance-reviewer-gpt.pdf)**
 
 ---
 
@@ -20,9 +22,7 @@ Its purpose is to make hidden assumptions visible, force explicitness, and block
 
 You can interact directly with the **Deterministic Governance Architect** here:
 
-**[Open the Deterministic Governance Architect on ChatGPT](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**
-
- **[Download tutorial](GPTtutoria/Deterministic%20Governance%20Reviewer%20Gpt.pdf)**
+👉 **[Open the Deterministic Governance Architect on ChatGPT](https://chatgpt.com/g/g-69841c78ad84819194e4e668d8d3748c-deterministic-governance-architect)**
 
 Bring a concrete system, policy, or decision flow.  
 Expect blocking, clarification requests, and rigorous governance review **by design**.
@@ -136,25 +136,13 @@ If decisions matter, explanations matter.
 This project improves through **use, pressure, and critique**, not passive agreement.
 
 You can contribute by:
-
-- **Mapping real systems** and documenting where they fail to reach Achievement State  
-- **Identifying domains** where deterministic governance is impossible or undesirable  
-- **Challenging the ontology boundaries** and surfacing edge cases  
-- **Providing anonymized case studies** from public, research, or enterprise contexts  
-- **Testing the system adversarially**, not cooperatively  
+- Mapping real systems and documenting where they fail to reach Achievement State  
+- Identifying domains where deterministic governance is impossible or undesirable  
+- Challenging ontology boundaries and surfacing edge cases  
+- Providing anonymized case studies from public, research, or enterprise contexts  
+- Testing the system adversarially, not cooperatively  
 
 Contribution is not about adding features—it is about testing whether the framework genuinely constrains ambiguity and power.
-
----
-
-## How this work moves forward
-
-The Deterministic Governance Architect is intended to function as:
-- a **design-time checkpoint** before deployment  
-- a **shared language** for governance discussions  
-- a way to separate *what can be governed* from *what must escalate to humans*  
-
-Its long-term value lies in helping institutions scale AI and automation **without losing accountability, legitimacy, or trust**.
 
 ---
 
