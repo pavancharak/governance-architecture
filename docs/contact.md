@@ -16,6 +16,8 @@ Typical roles and teams include:
 * security, safety, or internal audit functions
 * legal, policy, or enterprise architecture groups
 * founders or technical leaders accountable for regulated deployments
+* **investors and funds focused on deep-tech, infrastructure, or governance-critical systems**
+* **government bodies or public-sector institutions interested in supporting, piloting, or advancing deterministic governance for AI**
 
 You do not need to represent the entire organization. Engagement often starts with **one department or accountable owner** tasked with making AI systems defensible.
 
@@ -45,5 +47,3 @@ If your concern is not model performance, but **who is allowed to decide, why, a
 * [**Email**](mailto:pavan@deterministicgovernance.org)
 * [**LinkedIn**](https://www.linkedin.com/in/pavancharak/)
 * [**Website**](https://www.deterministicgovernance.org/)
-
-
