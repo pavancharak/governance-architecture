@@ -5,15 +5,15 @@ nav:
   - Home: index.md
   - Whitepapers: whitepapers.md
  # - Axioms: axioms.md
-  # - Ontology: ontology.md
-  #  - Records: records.md
-   # - Engine: engine.md
-  #  - Escalation: escalation.md
-  #  - Architecture: architecture_v1.md
-  #  - Schemas: schemas_v1.md
-  #  - Examples: examples_v1.md
-  - Principles: governance_principles.md
-  - Glossary: glossary.md
+ # - Ontology: ontology.md
+ #  - Records: records.md
+ # - Engine: engine.md
+ #  - Escalation: escalation.md
+ #  - Architecture: architecture_v1.md
+ #  - Schemas: schemas_v1.md
+ #  - Examples: examples_v1.md
+ # - Principles: governance_principles.md
+ #- Glossary: glossary.md
   - Use the Custom GPT: DeterministicGovernanceArchitect.md
   - Newsletter: newsletter.md
   - Contact: contact.md
