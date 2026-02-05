@@ -10,4 +10,4 @@ To build a deterministic Decision Layer that enables AI-powered systems to opera
 
 **Pavan Dev Singh Charak** has over **14 years of experience** across software development, business management, and product development. For the past **3 years**, he has worked full-time on **Deterministic Governance Systems**, investing significant effort in designing and building this governance model. He is proficient in building **GenAI and agentic AI systems** and works with startups on **AI strategy and AI consulting**, with a focus on deployable, governed AI in real-world environments.
 
-* [**Contact**](contact/)
+* [**Contact**](docs/contact/)
