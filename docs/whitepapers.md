@@ -24,7 +24,7 @@ The paper is intended to be read as a whole. No role-based guidance, selective i
 
 ## Why this whitepaper matters
 
-As AI systems increasingly shape legal, economic, and societal outcomes, governance failures arise not primarily from intent or model accuracy, but from **structural ambiguity**—where intent is inferred, authority is assumed, and explanations are constructed only after action.
+As AI systems increasingly shape legal, economic, and societal outcomes, governance failures arise not primarily from intent or model accuracy, but from **structural ambiguity** where intent is inferred, authority is assumed, and explanations are constructed only after action.
 
 This whitepaper argues that such failures are predictable and preventable. It advances the position that **governability must be a design requirement**, not a retrospective compliance exercise.
 
